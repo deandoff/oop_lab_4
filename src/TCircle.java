@@ -10,14 +10,11 @@ public class TCircle extends TFigure {
         this.color = color;
     }
     public TCircle(int x, int y) { super(x,y); }
-    public void Show(boolean vision) {
-        setVisible(vision);
-        this.repaint();
-    }
     public void ChangeRadius(int r) {
         r1 = r2 = r;
         this.Show(true);
     }
+    @Override
     public void paintComponent(Graphics component){
         super.paintComponent(component);
         component.setColor(color);
