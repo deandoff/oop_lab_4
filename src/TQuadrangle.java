@@ -1,10 +1,7 @@
 package src;
 
-import src.TFigure;
-
 import java.awt.*;
 public class TQuadrangle extends TFigure {
-    protected int w,h = 0;
     protected Color color;
     public TQuadrangle(int x1, int y1, int x2, int y2, int x3, int y3,int x4,int y4, Color color){
         super(x1,y1);
