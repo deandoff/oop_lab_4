@@ -11,25 +11,19 @@ abstract class TFigure extends JPanel {
         TPoint.Set(x, y);
     }
     protected void Move(int x, int y) {
-        this.Show(false);
-        x1 = TPoint.GetX() + x;
-        y1 = TPoint.GetY() + y;
-        TPoint.Set(x1, y1);
-        x2 += x;
-        x3 += x;
-        x4 += x;
-        y2 += y;
-        y3 += y;
-        y4 += y;
-        this.Show(true);
-    }
-    public void Show(boolean vision) {
-        setVisible(vision);
-        this.repaint();
+        this.x1 = TPoint.GetX() + x;
+        this.y1 = TPoint.GetY() + y;
+        this.TPoint.Set(x1, y1);
+        this.x2 += x;
+        this.x3 += x;
+        this.x4 += x;
+        this.y2 += y;
+        this.y3 += y;
+        this.y4 += y;
     }
     public void Set(int x, int y) {
-        TPoint.Set(x,y);
+        this.TPoint.Set(x,y);
     }
-    public int GetX() {return TPoint.GetX();}
-    public int GetY() {return TPoint.GetY();}
+    public int GetX() {return this.TPoint.GetX();}
+    public int GetY() {return this.TPoint.GetY();}
 }

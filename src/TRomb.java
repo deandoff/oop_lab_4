@@ -17,6 +17,5 @@ public class TRomb extends TQuadrangle {
         x3 -= x;
         y2 += y;
         y4 -= y;
-        this.Show(true);
     }
 }

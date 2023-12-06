@@ -2,16 +2,21 @@ package src;
 
 import java.awt.*;
 public class TEllipse extends TCircle {
-    public TEllipse(int x, int y, int r1, int r2, Color color) {
+    protected int r1;
+    public TEllipse(int x, int y, int r, int r1, Color color) {
         super(x,y);
-        this.r1=r1;
-        this.r2=r2;
-        this.color=color;
+        this.r = r;
+        this.r1 = r1;
+        this.color = color;
     }
     public void Turn() {
-        int a = r1;
-        r1=r2;
-        r2= a;
-        this.Show(true);
+        int a = r;
+        r=r1;
+        r1 = a;
+    }
+
+    public void paintComponent(Graphics component){
+        component.setColor(color);
+        component.drawOval(super.GetX(), super.GetY(), r*3, r1 * 4);
     }
 }

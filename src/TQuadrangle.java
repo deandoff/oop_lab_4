@@ -13,6 +13,10 @@ public class TQuadrangle extends TFigure {
         this.y4=y4;
         this.color=color;
     }
+    public void Show(boolean vision) {
+        setVisible(vision);
+        this.repaint();
+    }
     public TQuadrangle(int x1, int y1){
         super(x1,y1);
     }
@@ -21,7 +25,6 @@ public class TQuadrangle extends TFigure {
         x3 = x2;
         y3 += y;
         y4 = y3;
-        this.Show(true);
     }
     @Override
     public void paintComponent(Graphics component) {

@@ -15,6 +15,5 @@ public class TTrapeze extends TQuadrangle {
         y2 += y;
         x3 += x;
         x4 -= x;
-        this.Show(true);
     }
 }
