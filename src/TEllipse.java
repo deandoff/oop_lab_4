@@ -15,6 +15,11 @@ public class TEllipse extends TCircle {
         r1 = a;
     }
 
+    @Override
+    public void Show(boolean vision) {
+        this.setVisible(vision);
+        this.repaint();
+    }
     public void paintComponent(Graphics component){
         component.setColor(color);
         component.drawOval(super.GetX(), super.GetY(), r*3, r1 * 4);

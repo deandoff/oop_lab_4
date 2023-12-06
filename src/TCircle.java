@@ -10,7 +10,7 @@ public class TCircle extends TFigure {
         this.color = color;
     }
     public TCircle(int x, int y) { super(x,y); }
-
+    @Override
     public void Show(boolean vision) {
         setVisible(vision);
         this.repaint();
@@ -18,6 +18,7 @@ public class TCircle extends TFigure {
 
     public void ChangeRadius(int r) {
         this.r = r;
+        this.repaint();
     }
     @Override
     public void paintComponent(Graphics component){

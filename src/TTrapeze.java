@@ -16,4 +16,9 @@ public class TTrapeze extends TQuadrangle {
         x3 += x;
         x4 -= x;
     }
+    @Override
+    public void Show(boolean vision) {
+        this.setVisible(vision);
+        this.repaint();
+    }
 }

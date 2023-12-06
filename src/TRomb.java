@@ -18,4 +18,9 @@ public class TRomb extends TQuadrangle {
         y2 += y;
         y4 -= y;
     }
+    @Override
+    public void Show(boolean vision) {
+        this.setVisible(vision);
+        this.repaint();
+    }
 }

@@ -1,6 +1,7 @@
 package src;
 
 import javax.swing.*;
+import java.awt.*;
 
 abstract class TFigure extends JPanel {
     protected int x1,y1,x2,y2,x3,y3,x4,y4;
@@ -21,9 +22,12 @@ abstract class TFigure extends JPanel {
         this.y3 += y;
         this.y4 += y;
     }
+
+    public void Show(boolean vision) {}
     public void Set(int x, int y) {
         this.TPoint.Set(x,y);
     }
     public int GetX() {return this.TPoint.GetX();}
     public int GetY() {return this.TPoint.GetY();}
+    public void paintComponent(Graphics component){}
 }

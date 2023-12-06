@@ -13,6 +13,8 @@ public class TQuadrangle extends TFigure {
         this.y4=y4;
         this.color=color;
     }
+
+    @Override
     public void Show(boolean vision) {
         setVisible(vision);
         this.repaint();
